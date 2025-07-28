@@ -1,0 +1,10 @@
+name: 3rd project
+on: workflow_dispatch
+jobs:
+  a3rd_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 3rd job
+      run: echo " 3rd"
+    - name: bye
+      run: echo "bye"
