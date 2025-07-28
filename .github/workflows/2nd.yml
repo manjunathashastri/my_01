@@ -1,0 +1,10 @@
+name: my-second-project
+on: workflow_dispatch
+jobs:
+  second_workflow:
+    runs-on: ubuntu-latest
+    steps:
+    - name: second flow
+      run: echo "hello second"
+    - name: 2nd flow
+      run: echo "bye done..!"
