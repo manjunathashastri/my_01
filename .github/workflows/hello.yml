@@ -1,0 +1,11 @@
+name: my-project
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: hello to everyone
+      run: echo "hello everyone"
+    - name: bye
+      run: echo "project done bye"
+    
