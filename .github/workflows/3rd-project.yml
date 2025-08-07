@@ -1,10 +1,17 @@
-name: 3rd project
-on: workflow_dispatch
+name: first workflow
+on: push
 jobs:
-  a3rd_job:
-    runs-on: ubuntu-latest
-    steps:
-    - name: 3rd job
-      run: echo " 3rd"
-    - name: bye
-      run: echo "bye"
+   build:
+     name: build job
+     runs-on: ubuntu-latest
+     steps:
+     - name: checkoutscm
+       uses: action/checkout@v3
+     - name: install nodejs
+       uses: action/setup-node@v3
+       with:
+        node-version: 29
+     - name: install dependence
+       run: npm install
+     - name: run init testcase
+       run: npm test
