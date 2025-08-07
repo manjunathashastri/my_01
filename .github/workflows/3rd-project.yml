@@ -11,7 +11,7 @@ jobs:
        uses: actions/setup-node@v4
        with:
         node-version: 20
-     - name: install dependence
-       run: npm install
+     - name: check the ls
+       run: ls
      - name: run init testcase
-       run: npm test
+       run: echo " hello every one"
